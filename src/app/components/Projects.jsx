@@ -44,26 +44,30 @@ const Projects = () => {
             <ProjectTag name="Fullstack" onClick={() => {handleTagChange("Fullstack")}} isSelected={tag === "Fullstack"} />
         </div>
 
-        <ul ref={ref} className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
-            {filteredProjects.map((project, index) => (
-              <motion.li
-                key={index}
-                variants={cardVariants}
-                initial="initial"
-                animate={isInView ? "animate" : "initial"}
-                transition={{ duration: 0.3, delay: index * 0.4 }}
-              >
-                <ProjectCard 
-                    key={project.id} 
-                    title={project.title} 
-                    description={project.description} 
-                    imgUrl={project.image}
-                    gitUrl={project.gitUrl}
-                    previewUrl={project.previewUrl}
-                />
-              </motion.li>
-            ))}
-        </ul>
+        {console.log(filteredProjects.length)}
+
+        {filteredProjects.length === 0 ? <h2 className='text-white text-xl font-bold text-center'>Sorry, no projects yet. Will develop soon :D</h2> :
+          <ul ref={ref} className='grid md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12'>
+              {filteredProjects.map((project, index) => (
+                <motion.li
+                  key={index}
+                  variants={cardVariants}
+                  initial="initial"
+                  animate={isInView ? "animate" : "initial"}
+                  transition={{ duration: 0.3, delay: index * 0.4 }}
+                >
+                  <ProjectCard 
+                      key={project.id} 
+                      title={project.title} 
+                      description={project.description} 
+                      imgUrl={project.image}
+                      gitUrl={project.gitUrl}
+                      previewUrl={project.previewUrl}
+                  />
+                </motion.li>
+              ))}
+          </ul>
+        }
     </section>
   )
 }
