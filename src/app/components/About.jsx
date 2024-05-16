@@ -19,7 +19,7 @@ const About = () => {
   return (
     <section className='text-white' ref={aboutRef}>
         <div className='flex flex-col lg:flex-row items-center gap-8 py-8 sm:py-16 xl:gap-16'>
-            <Image src="/images/about-image.png" width={500} height={500} />
+            <Image src="/images/about-image.png" width={500} height={500} alt="about-me" />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg'>I am a full stack web developer with a passion for creating

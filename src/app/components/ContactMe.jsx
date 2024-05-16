@@ -55,9 +55,9 @@ const ContactMe = () => {
     <section ref={contactRef} className='grid md:grid-cols-2 py-24 gap-8 md:gap-6 relative'>
         {/* <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-2/3 transform -translate-x-1/2 -translate-1/2"></div> */}
         <div className='z-10'>
-            <h5 className='text-xl font-bold text-white my-2'>Let's Connect</h5>
+            <h5 className='text-xl font-bold text-white my-2'>Let&apos;s Connect</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
-                Whether you have a question or just want to say 'Hi', I'll try my best to get back to you. My inbox is always open! ✉️
+                Whether you have a question or just want to say &apos;Hi&apos;, I&apos;ll try my best to get back to you. My inbox is always open! ✉️
             </p>
             <div className='social flex flex-row gap-2'>
                 <Link href="https://github.com/AishwaryaParab" target="_blank">

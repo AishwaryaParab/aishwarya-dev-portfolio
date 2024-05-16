@@ -31,7 +31,7 @@ const Hero = () => {
           className='col-span-8 place-self-center text-center sm:text-left justify-self-start'
         >
           <h1 className='text-white mb-4 font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl lg:leading-normal md:leading-normal'>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Hello, I'm{" "}</span>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600'>Hello, I&apos;m{" "}</span>
             <br />
             <TypeAnimation
                 sequence={[
